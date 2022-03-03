@@ -12,6 +12,8 @@ import { HeaderComponent } from './components/template/header/header.component';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './views/home/home.component';
+import { HttpClient } from '@angular/common/http';
+import { CardHouseComponent } from './components/template/card-house/card-house.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,7 @@ import { HomeComponent } from './views/home/home.component';
     FooterComponent,
     NavComponent,
     HomeComponent,
+    CardHouseComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,8 @@ import { HomeComponent } from './views/home/home.component';
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    HttpClient
   ],
   providers: [],
   bootstrap: [AppComponent]

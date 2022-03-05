@@ -1,1 +1,20 @@
-
+<mat-card-content class="mat-card-container" *ngFor="let house of listHouses">
+  <mat-card class="card-house">
+    <mat-card-title>
+      <h2>{{house.name}}</h2>
+    </mat-card-title>
+    <mat-card-subtitle>
+      <h3>{{house.category}}</h3>
+    </mat-card-subtitle>
+    <mat-card-content class="card-content">
+      <img src="{{house.imgLink}}" alt="foto da casa">
+      <p class="card-description">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam sequi,
+         omnis consequuntur delectus beatae voluptas minima eveniet. Ea repudiandae
+          est deleniti eius a, tenetur dolore aperiam. Dolores nemo a corporis!
+      </p>
+      <p class="card-description">{{house.price}}</p>
+      <button></button>
+    </mat-card-content>
+  </mat-card>
+</mat-card-content>

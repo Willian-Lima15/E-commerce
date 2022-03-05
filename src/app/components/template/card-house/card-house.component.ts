@@ -13,6 +13,10 @@ export class CardHouseComponent implements OnInit {
   constructor(private checkoutService: CheckoutService) { }
 
   ngOnInit() {
+    this.checkoutService.getListHouses().subscribe((house) =>{
+      this.listHouses = house;
+      console.log(this.listHouses)
+    })
   }
 
 }

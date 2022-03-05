@@ -12,8 +12,9 @@ import { HeaderComponent } from './components/template/header/header.component';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './views/home/home.component';
-import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { CardHouseComponent } from './components/template/card-house/card-house.component';
+import { ListHouseComponent } from './views/list-house/list-house/list-house.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { CardHouseComponent } from './components/template/card-house/card-house.
     NavComponent,
     HomeComponent,
     CardHouseComponent,
+    ListHouseComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,7 @@ import { CardHouseComponent } from './components/template/card-house/card-house.
     MatSidenavModule,
     MatListModule,
     MatCardModule,
-    HttpClient
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
